@@ -1,0 +1,12 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+<h2>{{ portfolio.user.first_name }} {{ portfolio.user.last_name }}'s Portfolio</h2>
+<p><strong>Title:</strong> {{ portfolio.portfolio_title }}</p>
+<p><strong>Description:</strong> {{ portfolio.portfolio_description }}</p>
+
+<h4>Project</h4>
+<p><strong>Name:</strong> {{ portfolio.project.project_name }}</p>
+<p><strong>Description:</strong> {{ portfolio.project.project_description }}</p>
+<p><strong>Created At:</strong> {{ portfolio.project.created_at }}</p>
+{% endblock %}
